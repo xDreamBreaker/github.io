@@ -1,0 +1,145 @@
+/* @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto"), local("Roboto-Medium") url("/fonts/Roboto-Medium.ttf");
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.main-header {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #121920;
+}
+
+
+.header {
+}
+.main {
+    padding-top: 71px;
+    /* padding-left: 20px; */
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners__item {
+    border: 1px solid #EBEBF1; 
+    border-radius: 4px;
+    width: 335px;
+    height: 140px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo-wrapper {
+    border-bottom: 1px solid #BBC4D6;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 21px;
+}
+.search {
+    display: flex;
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+}
+
+.search--medium {
+    display: none;
+}
+
+.search__img {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.search__input {
+    border: none;
+    color: #BBC4D6;
+}
+
+.search__input::placeholder {
+    color: #BBC4D6;
+}
+
+
+.logo {
+}
+.user {
+}
+
+@media screen and (min-width: 768px) {
+    .search--medium {
+        display: block;
+    }
+    
+    .search--small {
+        display: none;
+    }
+
+    .partners {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .partners__item {
+        width: 229px;
+        height: 120px;
+        /* margin-right: 20px; */
+        
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .search--medium {
+        width: 835px;
+        height: 40px;
+        border: 1px solid #EBEBF1; 
+        border-radius: 4px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .partners {
+        gap: 30px;
+    }
+    .partners__item {
+        width: 287px;
+        height: 120px;
+    }
+
+    .container {
+        padding: 0 100px;
+    }
+}
